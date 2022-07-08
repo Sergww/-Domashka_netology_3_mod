@@ -12,7 +12,7 @@ SELECT title FROM Compilation
 WHERE year_release BETWEEN 2018 AND 2020;
 
 SELECT title FROM Track
-WHERE title ILIKE '%my%' OR title LIKE '%мой%';
+WHERE title ILIKE '%my%' OR title LIKE 'РјРѕР№';
 
 SELECT nickname FROM Musicians
 WHERE (length(nickname)-length(replace(nickname,' ',''))+1) = 1
