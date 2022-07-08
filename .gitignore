@@ -21,11 +21,13 @@ Thumbs.db
 _old, 
 *.*_backup*
 /tmp/
+/BackUp/
 Domaska-3-1-1.drawio
 Domaska-3-2-1.drawio
 Domaska-3-2-1(2).drawio
 Domaska-3-2-2.drawio
 
+Rabota_s_PostgreSQL_nastroyka_i_masshtabirovanie.pdf
 
 команды psql.txt
 postgres.txt
