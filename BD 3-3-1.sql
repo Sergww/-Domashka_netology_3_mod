@@ -30,7 +30,7 @@ INSERT INTO musicians (nickname)
 VALUES('Louis Armstrong');
 
 INSERT INTO musicians (nickname)  
-VALUES('Круг');
+VALUES('Михаил Круг');
 
 INSERT INTO musicians (nickname)  
 VALUES('Madonna');
@@ -183,7 +183,7 @@ INSERT INTO Track (title, duration, album_id)
 values ('Мы все умрём', 166, 4);
 
 INSERT INTO Track (title, duration, album_id)
-values ('Àãåíò', 215, 4);
+values ('Агент', 215, 4);
 
 INSERT INTO Track (title, duration, album_id)
 values ('My One and Only Love', 199, 5);
