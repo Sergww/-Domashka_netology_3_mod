@@ -23,9 +23,13 @@ INSERT INTO Genres
 VALUES('chanson');
 
 
+<<<<<<< HEAD
 
 INSERT INTO musicians
     (nickname)
+=======
+INSERT INTO musicians (nickname) 
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 VALUES('Roxette');
 
 INSERT INTO musicians
@@ -40,9 +44,14 @@ INSERT INTO musicians
     (nickname)
 VALUES('Louis Armstrong');
 
+<<<<<<< HEAD
 INSERT INTO musicians
     (nickname)
 VALUES('˜˜˜˜');
+=======
+INSERT INTO musicians (nickname)  
+VALUES('ÐœÐ¸Ñ…Ð°Ð¸Ð» ÐšÑ€ÑƒÐ³');
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 
 INSERT INTO musicians
     (nickname)
@@ -57,9 +66,13 @@ INSERT INTO musicians
 VALUES('Elvis Presley');
 
 
+<<<<<<< HEAD
 
 INSERT INTO GenreMusician
     (musician_id, genre_id)
+=======
+INSERT INTO GenreMusician (musician_id, genre_id) 
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 VALUES(1, 1);
 
 INSERT INTO GenreMusician
@@ -99,9 +112,13 @@ INSERT INTO GenreMusician
 VALUES(8, 2);
 
 
+<<<<<<< HEAD
 
 INSERT INTO albums
     (title, year_release)
+=======
+INSERT INTO albums (title, year_release) 
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 VALUES('Good Karma', 2018);
 
 INSERT INTO albums
@@ -112,14 +129,20 @@ INSERT INTO albums
     (title, year_release)
 VALUES('Help!', 1965);
 
+<<<<<<< HEAD
 INSERT INTO albums
     (title, year_release)
 VALUES('˜˜˜˜˜˜˜ ˜ ˜˜˜˜˜˜˜˜', 2021);
+=======
+INSERT INTO albums (title, year_release) 
+VALUES('ÐšÑ€Ð°ÑÐ¾Ñ‚Ð° Ð¸ Ð£Ñ€Ð¾Ð´ÑÑ‚Ð²Ð¾', 2021);
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 
 INSERT INTO albums
     (title, year_release)
 VALUES('Louis Armstrong and His Friends', 1971);
 
+<<<<<<< HEAD
 INSERT INTO albums
     (title, year_release)
 VALUES('˜˜˜˜˜', 1998);
@@ -127,6 +150,13 @@ VALUES('˜˜˜˜˜', 1998);
 INSERT INTO albums
     (title, year_release)
 VALUES('˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜ (˜˜˜˜˜˜˜˜)', 1996);
+=======
+INSERT INTO albums (title, year_release)  
+VALUES('ÐœÐ°Ð´Ð°Ð¼', 1998);
+
+INSERT INTO albums (title, year_release) 
+VALUES('Ð—ÐµÐ»ÐµÐ½Ñ‹Ð¹ Ð¿Ñ€Ð¾ÐºÑƒÑ€Ð¾Ñ€ (Ð¡Ð²ÐµÑ‚Ð¾Ñ‡ÐºÐ°)', 1996);
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 
 INSERT INTO albums
     (title, year_release)
@@ -174,6 +204,7 @@ INSERT INTO MusicianAlbum
 VALUES(7, 9);
 
 
+<<<<<<< HEAD
 
 
 
@@ -183,6 +214,10 @@ INSERT INTO Compilation
     (title, year_release)
 values
     ('Best', 2018);
+=======
+INSERT INTO Compilation (title, year_release)
+values ('Best', 2018);
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 
 INSERT INTO Compilation
     (title, year_release)
@@ -194,16 +229,22 @@ INSERT INTO Compilation
 values
     ('Anthology 1', 1995);
 
+<<<<<<< HEAD
 INSERT INTO Compilation
     (title, year_release)
 values
     ('˜˜˜˜˜˜˜ ˜˜˜˜˜', 2022);
+=======
+INSERT INTO Compilation (title, year_release)
+values ('Ð¡Ð¼ÑƒÑ‚Ð½Ð¾Ðµ Ð²Ñ€ÐµÐ¼Ñ, 2022);
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 
 INSERT INTO Compilation
     (title, year_release)
 values
     ('The Complete Louis Armstrong Columbia', 2021);
 
+<<<<<<< HEAD
 INSERT INTO Compilation
     (title, year_release)
 values
@@ -213,6 +254,13 @@ INSERT INTO Compilation
     (title, year_release)
 values
     ('˜˜˜˜˜ ˜˜˜˜˜˜˜˜. ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜', 2009);
+=======
+INSERT INTO Compilation (title, year_release)  
+values ('Ð›ÐµÐ³ÐµÐ½Ð´Ñ‹ Ñ€ÑƒÑÑÐºÐ¾Ð³Ð¾ ÑˆÐ°Ð½ÑÐ¾Ð½Ð°. Ð¢Ð¾Ð¼ 1', 1999);  
+
+INSERT INTO Compilation (title, year_release)
+values ('Ð’ÐµÑ‚ÐµÑ€ ÑÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹. Ð¡Ð±Ð¾Ñ€Ð½Ð¸Ðº Ñ€ÑƒÑÑÐºÐ¾Ð³Ð¾ ÑˆÐ°Ð½ÑÐ¾Ð½Ð°', 2009);
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 
 INSERT INTO Compilation
     (title, year_release)
@@ -261,6 +309,7 @@ INSERT INTO Track
 values
     ('Yesterday', 123, 3);
 
+<<<<<<< HEAD
 INSERT INTO Track
     (title, duration, album_id)
 values
@@ -270,6 +319,13 @@ INSERT INTO Track
     (title, duration, album_id)
 values
     ('˜˜˜˜˜', 215, 4);
+=======
+INSERT INTO Track (title, duration, album_id)
+values ('ÐœÑ‹ Ð²ÑÐµ ÑƒÐ¼Ñ€Ñ‘Ð¼', 166, 4);
+
+INSERT INTO Track (title, duration, album_id)
+values ('ÐÐ³ÐµÐ½Ñ‚', 215, 4);
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 
 INSERT INTO Track
     (title, duration, album_id)
@@ -281,6 +337,7 @@ INSERT INTO Track
 values
     ('Boy from New Orleans', 237, 5);
 
+<<<<<<< HEAD
 INSERT INTO Track
     (title, duration, album_id)
 values
@@ -290,6 +347,13 @@ INSERT INTO Track
     (title, duration, album_id)
 values
     ('˜˜˜˜˜ ˜˜˜ ˜˜˜˜˜', 235, 7);
+=======
+INSERT INTO Track (title, duration, album_id)
+values ('Ð’Ð»Ð°Ð´Ð¸Ð¼Ð¸Ñ€ÑÐºÐ¸Ð¹ Ñ†ÐµÐ½Ñ‚Ñ€Ð°Ð»', 267, 6);
+
+INSERT INTO Track (title, duration, album_id)
+values ('ÐœÐ¸Ð»Ñ‹Ð¹ Ð¼Ð¾Ð¹ Ð³Ð¾Ñ€Ð¾Ð´', 235, 7);
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
 
 INSERT INTO Track
     (title, duration, album_id)
@@ -380,6 +444,11 @@ INSERT INTO TrackCompilation
     (track_id, compilation_id)
 VALUES(15, 10);
 
+<<<<<<< HEAD
 INSERT INTO TrackCompilation
     (track_id, compilation_id)
 VALUES(16, 10);
+=======
+INSERT INTO TrackCompilation (track_id, compilation_id) 
+VALUES(16, 10);
+>>>>>>> 0837262282a696da4cd57c07f5e0c29aa31aa8c6
