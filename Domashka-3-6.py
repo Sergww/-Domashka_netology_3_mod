@@ -1,5 +1,6 @@
 import json
 from psycopg2 import connect
+from sqlalchemy import create_engine
 import sqlalchemy as sq
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 
@@ -7,12 +8,11 @@ HELP1 = """
 Выберите откуда будем брать данные:
     0 - из этого кода
     1 - из json-файла
-    q - выход из меню
 """
 
 HELP2 = """
-Введите идентификатор издателя (id)
-если будете вводить название издателя, введите "0"
+Если будете водить идентификатор издателя (id), введите "0"
+если будете вводить название издателя, введите "1"
 для выход из этого меню введите "q"
 """
 
@@ -71,11 +71,14 @@ def create_tables(engine):
 
 def print_result(qq):
     print(f'\nВыводим результат:')
+    p = '0'
     if qq.all() != []:
         for s in qq.all():
             print(s.id, s.name)
+            return s.name
     else:
         print('По заданным параметрам ничего не найдено!')
+    return p
 
 
 if __name__ == '__main__':
@@ -148,6 +151,7 @@ if __name__ == '__main__':
             # фиксируем изменения
             session.commit()
             print(f'Таблицы созданы и заполнены\n')
+            break
 
         elif choice == '1':
 
@@ -172,24 +176,30 @@ if __name__ == '__main__':
                     session.add(sale_i)
             session.commit()
             print(f'Таблицы созданы и заполнены\n')
-        elif choice.lower() == 'q':
             break
+
         else:
             print('Некорректный ввод, повторите!')
 
-
+    pub_n = '0'
     while True:
         print(HELP2)
-        publisher_id = input('Ваш выбор -> ')
-        if publisher_id != '0':
-            q = session.query(Publisher).filter(Publisher.id == int(publisher_id))
-            print_result(q)
-        elif publisher_id == '0':
+        choice = input('Ваш выбор -> ')
+        if choice == '0':
+            q = session.query(Publisher).filter(Publisher.id == input('Введите id издателя -> '))
+            pub_n = print_result(q)
+        elif choice == '1':
             q = session.query(Publisher).filter(Publisher.name == input('Введите название издателя -> '))
-            print_result(q)
-        elif publisher_id.lower() == 'q':
+            pub_n = print_result(q)
+        elif choice.lower() == 'q':
             break
         else:
             print('Ошибка! Повторите ввод!')
+
+    if pub_n != '0':
+        print(f'\nСписок магазинов, в которых можно купить книги издателя "{pub_n}":')
+        q = session.query(Publisher.name, Shop.name).join(Book).join(Stock).join(Shop).filter(Publisher.name == pub_n).distinct().all()
+        for res in q:
+            print(f'"{res[1]}"')
 
     session.close()
